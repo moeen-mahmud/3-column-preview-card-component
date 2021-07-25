@@ -1,0 +1,139 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* Colors Declaration */
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraph-color: hsla(0, 0%, 100%, 0.75);
+  --bg-heading-btn-color: hsl(0, 0%, 95%);
+}
+
+/* Root Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--bg-heading-btn-color);
+}
+
+/* Main Content Styles */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  height: 97vh;
+  padding: 0 20rem;
+}
+
+.card {
+  padding: 2.5rem 2.1rem 3.5rem 2.5rem;
+}
+
+.card_sedans {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.card_suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card_luxury {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.card--content {
+  margin: 2rem 0 5rem 0;
+}
+
+.card--title {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  color: var(--bg-heading-btn-color);
+  margin-bottom: 2rem;
+}
+
+.card--content p {
+  line-height: 1.5rem;
+  color: var(--paragraph-color);
+}
+
+/* Button Styles */
+
+.card_button {
+  border-radius: 2rem;
+  background-color: var(--bg-heading-btn-color);
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.card_sedans--button {
+  color: var(--bright-orange);
+}
+
+.card_suvs--button {
+  color: var(--dark-cyan);
+}
+
+.card_luxury--button {
+  color: var(--very-dark-cyan);
+}
+
+.card_button:hover {
+  color: var(--bg-heading-btn-color);
+  background-color: inherit;
+  border: 2px solid var(--bg-heading-btn-color);
+}
+
+/* Attribution Style */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+    height: 90vh;
+  }
+
+  .card {
+    padding: 2.5rem 2.8rem 3.5rem 2.5rem;
+  }
+
+  .card_sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card_luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .attribution {
+    position: relative;
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+  }
+}
