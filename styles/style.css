@@ -111,7 +111,7 @@ body {
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
+@media only screen and (min-width: 300px) and (max-width: 992px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -135,5 +135,11 @@ body {
     position: relative;
     text-align: center;
     margin: 4rem 0 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1312px) {
+  .container {
+    padding: 0 10rem;
   }
 }
